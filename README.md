@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./img
----
-
 # Golang实现自己的KV存储引擎
 
 通过本项目可以学到什么？
@@ -14,7 +10,7 @@ typora-copy-images-to: ./img
 
 项目已托管GitHub :  https://github.com/gofish2020/easydb 欢迎学习Star，如果有看不懂的欢迎私信
 
-整个代码量不多，基本的大框架也好理解，容易出现错误的点在于代码细节的处理（特别是wal文件的读写部分）
+整个代码量1000多行，基本的大框架也好理解，容易出现错误的点在于代码细节的处理（特别是wal文件的读写部分）
 
 ![](./img/image-20231205194331633.png)
 
@@ -108,3 +104,7 @@ func main() {
 - 当在block中保存了多个chunk后，block剩余的空间不够保存数据，多余的空间浪费掉，填充一些无效字节即可
 
 ![](./img/image-20231205193959491.png)
+
+
+
+Ps：本项目主要参考 LotusDB 实现
